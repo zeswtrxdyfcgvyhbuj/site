@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <title>Min Rare Side</title>
+    <title>my weird website</title>
     <style>
         div, body {
             padding: 10vh 10vw;
@@ -11,7 +11,7 @@
             border-radius: 50%;
         }
 
-        div.SvartOgStygg {
+        div.Idk {
             background-color: black;
         }
     </style>
@@ -20,11 +20,11 @@
     <div style="background-color: maroon">
         <div style="background-color: purple; height: 30vh">
             <h1>Svenska Köttbollar</h1>
-            <h2 onclick="alert('Köttbollar');">Ikke trykk på meg!</h2>
+            <h2 onclick="alert('Köttbollar');">Don't click on me</h2>
             <h3 onclick="Nein()">Nein!</h3>
-            <h4 id="overskrift" onclick="endreTekst()">Ikke trykk på meg heller!</h4>
-            <h5 id="ikkeoverskrift" onclick="changeText()">Trykk for firkanter</h5>
-            <div id="minDiv">Hellu</div>
+            <h4 id="overskrift" onclick="changeTest1()">Don't click on me either</h4>
+            <h5 id="ikkeoverskrift" onclick="changeText2()">Click on me for squares</h5>
+            <div id="myDiv">Hello</div>
             </div>
         </div>
     </body>
@@ -35,16 +35,16 @@
             alert('Nein');
         }
 
-        function endreTekst() {
+        function changeTest1() {
             document.getElementById('overskrift').innerHTML = 'Ikke takk.';
         }
 
-        function changeText() {
+        function changeText2() {
             document.getElementById('ikkeoverskrift').innerHTML += ' ▀';
         }
 
-        document.getElementById('minDiv').classList.add('SvartOgStygg');
-        document.getElementById('minDiv').classList.remove('SvartOgStygg');
+        document.getElementById('myDiv').classList.add('Idk');
+        document.getElementById('myDiv').classList.remove('Idk');
         
         alert("hello")
     </script>
