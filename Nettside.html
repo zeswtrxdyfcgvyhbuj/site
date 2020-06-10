@@ -10,6 +10,10 @@
             color: rgb(112, 112, 112);
             border-radius: 50%;
         }
+
+        div.SvartOgStygg {
+            background-color: black;
+        }
     </style>
 </head>
 <body style="background-color: black">
@@ -17,7 +21,10 @@
         <div style="background-color: purple; height: 30vh">
             <h1>Svenska Köttbollar</h1>
             <h2 onclick="alert('Köttbollar');">Ikke trykk på meg!</h2>
-            <h3 onclick="Nein()">Haha</h3>
+            <h3 onclick="Nein()">Nein!</h3>
+            <h4 id="overskrift" onclick="endreTekst()">Ikke trykk på meg heller!</h4>
+            <h5 id="ikkeoverskrift" onclick="changeText()">Trykk for firkanter</h5>
+            <div id="minDiv">Hellu</div>
             </div>
         </div>
     </body>
@@ -27,6 +34,18 @@
             alert('Nein');
             alert('Nein');
         }
+
+        function endreTekst() {
+            document.getElementById('overskrift').innerHTML = 'Ikke takk.';
+        }
+
+        function changeText() {
+            document.getElementById('ikkeoverskrift').innerHTML += ' ▀';
+        }
+
+        document.getElementById('minDiv').classList.add('SvartOgStygg');
+        document.getElementById('minDiv').classList.remove('SvartOgStygg');
+        
         alert("hello")
     </script>
 </html>
